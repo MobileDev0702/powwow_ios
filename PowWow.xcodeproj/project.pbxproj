@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		5C0F9ED924DC42090075ACB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9ED824DC42090075ACB7 /* AppDelegate.swift */; };
 		5C0F9EDB24DC42090075ACB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9EDA24DC42090075ACB7 /* SceneDelegate.swift */; };
-		5C0F9EDD24DC42090075ACB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9EDC24DC42090075ACB7 /* ViewController.swift */; };
 		5C0F9EE024DC42090075ACB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F9EDE24DC42090075ACB7 /* Main.storyboard */; };
 		5C0F9EE224DC420A0075ACB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F9EE124DC420A0075ACB7 /* Assets.xcassets */; };
 		5C0F9EE524DC420A0075ACB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F9EE324DC420A0075ACB7 /* LaunchScreen.storyboard */; };
 		5C0F9EF024DC420B0075ACB7 /* PowWowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9EEF24DC420B0075ACB7 /* PowWowTests.swift */; };
 		5C0F9EFB24DC420B0075ACB7 /* PowWowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9EFA24DC420B0075ACB7 /* PowWowUITests.swift */; };
+		5C0F9F0924DC47CA0075ACB7 /* QREditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9F0824DC47CA0075ACB7 /* QREditVC.swift */; };
+		5C0F9F0B24DC47D90075ACB7 /* QRImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9F0A24DC47D90075ACB7 /* QRImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		5C0F9ED524DC42090075ACB7 /* PowWow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowWow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0F9ED824DC42090075ACB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0F9EDA24DC42090075ACB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C0F9EDC24DC42090075ACB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C0F9EDF24DC42090075ACB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C0F9EE124DC420A0075ACB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0F9EE424DC420A0075ACB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		5C0F9EF624DC420B0075ACB7 /* PowWowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowWowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0F9EFA24DC420B0075ACB7 /* PowWowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowWowUITests.swift; sourceTree = "<group>"; };
 		5C0F9EFC24DC420B0075ACB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0F9F0824DC47CA0075ACB7 /* QREditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QREditVC.swift; sourceTree = "<group>"; };
+		5C0F9F0A24DC47D90075ACB7 /* QRImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				5C0F9ED824DC42090075ACB7 /* AppDelegate.swift */,
 				5C0F9EDA24DC42090075ACB7 /* SceneDelegate.swift */,
-				5C0F9EDC24DC42090075ACB7 /* ViewController.swift */,
 				5C0F9EDE24DC42090075ACB7 /* Main.storyboard */,
 				5C0F9EE124DC420A0075ACB7 /* Assets.xcassets */,
 				5C0F9EE324DC420A0075ACB7 /* LaunchScreen.storyboard */,
 				5C0F9EE624DC420A0075ACB7 /* Info.plist */,
+				5C0F9F0824DC47CA0075ACB7 /* QREditVC.swift */,
+				5C0F9F0A24DC47D90075ACB7 /* QRImageVC.swift */,
 			);
 			path = PowWow;
 			sourceTree = "<group>";
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C0F9EDD24DC42090075ACB7 /* ViewController.swift in Sources */,
 				5C0F9ED924DC42090075ACB7 /* AppDelegate.swift in Sources */,
+				5C0F9F0B24DC47D90075ACB7 /* QRImageVC.swift in Sources */,
 				5C0F9EDB24DC42090075ACB7 /* SceneDelegate.swift in Sources */,
+				5C0F9F0924DC47CA0075ACB7 /* QREditVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
